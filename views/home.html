@@ -1,0 +1,18 @@
+<!-- home.html -->
+<div class="page-header">
+    <h1>Página Home!</h1>
+    <div class="categories-list">
+    <button id="button-crawl-category" class="button button-float button-crawl" ng-click="fetchCategories(1)">
+        Crawl Category
+    </button>
+        <p>supermarketId;categoryId;category;link</p>
+        <div class="data" ng-repeat="category in categories">
+            <p>{{category.supermarketId}};{{category.id}};{{category.name}};{{category.link}}</p>
+        </div>
+        <p>--------------------------------------------------------------------------</p>
+        <p>categoryId;subCategory;link</p>
+        <div class="data" ng-repeat="subCategory in subCategories">
+            <p>{{subCategory.categoryId}};{{subCategory.name}};{{subCategory.link}}</p>
+        </div>
+    </div>
+</div>
